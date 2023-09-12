@@ -39,7 +39,7 @@ from chainlit.langflow import load_flow
 import chainlit as cl
 
 
-with open("/Users/suchattangjarukij/Downloads/Vector Store.json", "r") as f:
+with open("langflowSchema/Vector Store (1).json", "r") as f:
     schema = json.load(f)
 
 
