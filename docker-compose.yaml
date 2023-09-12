@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  chainlit:
+    build:
+      context: .
+      dockerfile: Dockerfile.chainlit
+    image: chainlit
+    ports:
+      - "8001:8000"
+    volumes:
+      - .:/app
+  langflow:
+    build:
+      context: .
+      dockerfile: Dockerfile.langflow
+    image: langflow
+    ports:
+      - "7860:7860"
+    volumes:
+      - .:/app

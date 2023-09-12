@@ -18,8 +18,13 @@ then put your API key in the .env file
 https://docs.trychroma.com/
 
 
-# Run
 
+
+# Run
+## in docker
+```
+docker-compose up --build
+```
 ## Local Environnment development mode
 
 1. run chainlit interface

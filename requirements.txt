@@ -1,3 +1,5 @@
-langflow
+langchain
 chainlit
+langflow
 pyarrow
+openai
