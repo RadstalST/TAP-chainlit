@@ -1,0 +1,13 @@
+FROM python:3.10
+
+RUN pip install --upgrade pip
+COPY requirements.txt .
+RUN pip install chainlit==0.6.402
+# RUN pip install langchain
+RUN pip install langchain==0.0.256
+RUN pip install openai
+COPY main.py /app/main.py
+WORKDIR /app
+# RUN prisma generate
+
+CMD ["chainlit","run","main.py","-w"]
