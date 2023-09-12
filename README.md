@@ -1,6 +1,19 @@
-installation issues 
 
-https://github.com/Chainlit/chainlit/issues/56
+# installations
+
+1. install requirements
+```
+pip install -r requirements.txt
+```
+
+2. init your `.env`
+```bash
+cp .env.example .env
+```
+then put your API key in the .env file
+
+## issues 
+- M1/M2 installations refer to reinstalling the grpcio [grpcio issue](https://github.com/Chainlit/chainlit/issues/56)
 
 https://docs.trychroma.com/
 
